@@ -1,3 +1,3 @@
 # Test simple object RigidBody2D
 
-This test is for testing 
+For testing RigidBody2D
