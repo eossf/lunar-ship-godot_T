@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Lunar.gd" id="1_c8mjp"]
 [ext_resource type="Texture2D" uid="uid://df2wggthpllvs" path="res://lunar-ship-96.png" id="1_yn0c1"]
 
-[node name="Lunar" type="Node"]
+[node name="Lunar" type="Node2D"]
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
 script = ExtResource("1_c8mjp")
