@@ -1,11 +1,11 @@
 extends RigidBody2D
 
-var thrust = Vector2(0, -250)
-var torque = 20000
+var thrust = Vector2(0, -200000)
+var torque = 500000
 
 func _integrate_forces(state):
 	if Input.is_action_pressed("jump"):
-		state.apply_force(thrust.rotated(rotation))
+		state.apply_force(thrust)
 	else:
 		state.apply_force(Vector2())
 	var rotation_direction = 0

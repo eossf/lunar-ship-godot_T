@@ -1,13 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://ddl11ghjshxpk"]
+[gd_scene load_steps=4 format=3 uid="uid://ddl11ghjshxpk"]
 
-[ext_resource type="Script" path="res://Lunar.gd" id="1_c8mjp"]
+[ext_resource type="Script" path="res://lunar.gd" id="1_u8plr"]
 [ext_resource type="Texture2D" uid="uid://df2wggthpllvs" path="res://lunar-ship-96.png" id="1_yn0c1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_10vn7"]
+size = Vector2(63, 65)
 
 [node name="Lunar" type="Node2D"]
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
-script = ExtResource("1_c8mjp")
+mass = 150.0
+script = ExtResource("1_u8plr")
 
 [node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
-position = Vector2(194, 150)
+position = Vector2(0, -1)
 texture = ExtResource("1_yn0c1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(1.5, 1.5)
+shape = SubResource("RectangleShape2D_10vn7")
