@@ -9,7 +9,8 @@ size = Vector2(63, 65)
 [node name="Lunar" type="Node2D"]
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
-mass = 150.0
+mass = 100.0
+center_of_mass_mode = 1
 script = ExtResource("1_u8plr")
 
 [node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]

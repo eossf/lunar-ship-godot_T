@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cd00lld3e4t84"]
+[gd_scene load_steps=7 format=3 uid="uid://cd00lld3e4t84"]
 
 [ext_resource type="PackedScene" uid="uid://ddl11ghjshxpk" path="res://lunar.tscn" id="1_vj07n"]
 [ext_resource type="Texture2D" uid="uid://d2fsm27j23ix6" path="res://grey_rocks_pattern-5.png" id="2_mdh43"]
 [ext_resource type="Script" path="res://lunar_factory.gd" id="3_0aq1q"]
+[ext_resource type="Texture2D" uid="uid://do33dv4a74ama" path="res://stars.png" id="4_do6ar"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rwnmm"]
 texture = ExtResource("2_mdh43")
@@ -99,7 +100,7 @@ sources/0 = SubResource("TileSetAtlasSource_rwnmm")
 [node name="Root" type="Node"]
 
 [node name="Lunar" parent="." instance=ExtResource("1_vj07n")]
-position = Vector2(136, 155)
+position = Vector2(196, 375)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -115,3 +116,9 @@ layer_0/tile_data = PackedInt32Array(1245184, 0, 1, 1310720, 0, 2, 1376256, 0, 3
 
 [node name="LunarFactory" type="Node2D" parent="."]
 script = ExtResource("3_0aq1q")
+
+[node name="Stars" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(512.25, 361.5)
+scale = Vector2(1.06531, 1.14082)
+texture = ExtResource("4_do6ar")

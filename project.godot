@@ -15,7 +15,7 @@ run/main_scene="res://root.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 boot_splash/bg_color=Color(1, 1, 1, 1)
 boot_splash/image="res://lunar_lander.png"
-config/icon="res://icon.svg"
+config/icon="res://lunar-ship-96.png"
 
 [display]
 
